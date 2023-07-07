@@ -17,6 +17,7 @@ export interface ContextOptions {
    * Use this to pass your Svelte Query context. Otherwise, `defaultContext` will be used.
    */
   context?: QueryClient | undefined
+  queryClient?: QueryClient
 }
 
 export interface CreateBaseQueryOptions<

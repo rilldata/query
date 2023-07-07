@@ -78,7 +78,7 @@ export function createMutation<
   arg3?: CreateMutationOptions<TData, TError, TVariables, TContext>,
 ): CreateMutationResult<TData, TError, TVariables, TContext> {
   const options = parseMutationArgs(arg1, arg2, arg3)
-  const queryClient = useQueryClient()
+  const queryClient = options.queryClient ?? useQueryClient()
   let observer = new MutationObserver<TData, TError, TVariables, TContext>(
     queryClient,
     options,

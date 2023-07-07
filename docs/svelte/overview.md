@@ -3,7 +3,7 @@ id: overview
 title: Overview
 ---
 
-The `@tanstack/svelte-query` package offers a 1st-class API for using TanStack Query via Svelte.
+The `@rilldata/svelte-query` package offers a 1st-class API for using TanStack Query via Svelte.
 
 ## Example
 
@@ -11,7 +11,7 @@ Include the QueryClientProvider near the root of your project:
 
 ```markdown
 <script lang="ts">
-  import { QueryClient, QueryClientProvider } from '@tanstack/svelte-query'
+  import { QueryClient, QueryClientProvider } from '@rilldata/svelte-query'
   import Example from './lib/Example.svelte'
 
   const queryClient = new QueryClient()
@@ -26,7 +26,7 @@ Then call any function (e.g. createQuery) from any component:
 
 ```markdown
 <script lang="ts">
-  import { createQuery } from '@tanstack/svelte-query'
+  import { createQuery } from '@rilldata/svelte-query'
 
   const query = createQuery({
     queryKey: ['todos'],

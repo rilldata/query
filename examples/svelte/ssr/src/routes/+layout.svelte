@@ -1,6 +1,6 @@
 <script lang="ts">
   import '../app.css'
-  import { QueryClientProvider } from '@tanstack/svelte-query'
+  import { QueryClientProvider } from '@rilldata/svelte-query'
   import type { PageData } from './$types'
 
   export let data: PageData

@@ -1,5 +1,5 @@
 import { browser } from '$app/environment'
-import { QueryClient } from '@tanstack/svelte-query'
+import { QueryClient } from '@rilldata/svelte-query'
 import type { LayoutLoad } from './$types'
 
 export const load: LayoutLoad = async () => {

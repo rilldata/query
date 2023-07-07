@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { createQuery } from '@tanstack/svelte-query'
+  import { createQuery } from '@rilldata/svelte-query'
   import { getPostById } from './data'
   import type { Post } from './types'
 

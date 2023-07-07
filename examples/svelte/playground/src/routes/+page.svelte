@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { useQueryClient } from '@tanstack/svelte-query'
+  import { useQueryClient } from '@rilldata/svelte-query'
   import {
     staleTime,
     cacheTime,

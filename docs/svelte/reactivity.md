@@ -9,7 +9,7 @@ In the below example, the `refetchInterval` option is set from the variable `int
 
 ```markdown
 <script lang="ts">
-  import { createQuery } from '@tanstack/svelte-query'
+  import { createQuery } from '@rilldata/svelte-query'
 
   let intervalMs = 1000
 
@@ -29,7 +29,7 @@ To solve this, you can prefix the query with `$: ` to tell the compiler it shoul
 
 ```markdown
 <script lang="ts">
-  import { createQuery } from '@tanstack/svelte-query'
+  import { createQuery } from '@rilldata/svelte-query'
 
   let intervalMs = 1000
 

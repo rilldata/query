@@ -1,7 +1,7 @@
 <script lang="ts">
   import '../app.css'
   import { browser } from '$app/environment'
-  import { QueryClientProvider, QueryClient } from '@tanstack/svelte-query'
+  import { QueryClientProvider, QueryClient } from '@rilldata/svelte-query'
 
   const queryClient = new QueryClient({
     defaultOptions: {

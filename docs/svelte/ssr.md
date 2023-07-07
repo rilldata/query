@@ -14,7 +14,7 @@ The recommended way to achieve this is to use the `browser` module from SvelteKi
 ```markdown
 <script lang="ts">
   import { browser } from '$app/environment'
-  import { QueryClient, QueryClientProvider } from '@tanstack/svelte-query'
+  import { QueryClient, QueryClientProvider } from '@rilldata/svelte-query'
 
   const queryClient = new QueryClient({
     defaultOptions: {
@@ -36,12 +36,12 @@ Svelte Query supports two ways of prefetching data on the server and passing tha
 
 If you wish to view the ideal SSR setup, please have a look at the [SSR example](../examples/svelte/ssr).
 
-
 ### Using `initialData`
 
 Together with SvelteKit's [`load`](https://kit.svelte.dev/docs/load), you can pass the data loaded server-side into `createQuery`'s' `initialData` option:
 
 **src/routes/+page.ts**
+
 ```ts
 import type { PageLoad } from './$types'
 
@@ -52,9 +52,10 @@ export const load: PageLoad = async () => {
 ```
 
 **src/routes/+page.svelte**
+
 ```markdown
 <script>
-  import { createQuery } from '@tanstack/svelte-query'
+  import { createQuery } from '@rilldata/svelte-query'
   import type { PageData } from './$types'
 
   export let data: PageData
@@ -86,7 +87,7 @@ Svelte Query supports prefetching queries on the server. Using this setup below,
 
 ```ts
 import { browser } from '$app/environment'
-import { QueryClient } from '@tanstack/svelte-query'
+import { QueryClient } from '@rilldata/svelte-query'
 import type { LayoutLoad } from './$types'
 
 export const load: LayoutLoad = async () => {
@@ -106,7 +107,7 @@ export const load: LayoutLoad = async () => {
 
 ```markdown
 <script lang="ts">
-  import { QueryClientProvider } from '@tanstack/svelte-query'
+  import { QueryClientProvider } from '@rilldata/svelte-query'
   import type { LayoutData } from './$types'
 
   export let data: LayoutData
@@ -128,7 +129,7 @@ export const load: PageLoad = async ({ parent, fetch }) => {
   // You need to use the SvelteKit fetch function here
   await queryClient.prefetchQuery({
     queryKey: ['posts'],
-    queryFn: async () => (await fetch('/api/posts')).json()
+    queryFn: async () => (await fetch('/api/posts')).json(),
   })
 }
 ```
@@ -137,7 +138,7 @@ export const load: PageLoad = async ({ parent, fetch }) => {
 
 ```markdown
 <script lang="ts">
-  import { createQuery } from '@tanstack/svelte-query'
+  import { createQuery } from '@rilldata/svelte-query'
 
   // This data is cached by prefetchQuery in +page.ts so no fetch actually happens here
   const query = createQuery({

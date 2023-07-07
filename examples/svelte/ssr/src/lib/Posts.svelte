@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { useQueryClient, createQuery } from '@tanstack/svelte-query'
+  import { useQueryClient, createQuery } from '@rilldata/svelte-query'
   import { api } from './api'
 
   const client = useQueryClient()

@@ -58,7 +58,7 @@ export const packages: Package[] = [
     entries: ['main', 'module', 'types'],
   },
   {
-    name: '@tanstack/svelte-query',
+    name: '@rilldata/svelte-query',
     packageDir: 'svelte-query',
     srcDir: 'src',
     entries: ['module', 'svelte', 'types'],

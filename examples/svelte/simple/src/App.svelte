@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { QueryClientProvider, QueryClient } from '@tanstack/svelte-query'
+  import { QueryClientProvider, QueryClient } from '@rilldata/svelte-query'
   import Simple from './lib/Simple.svelte'
 
   const queryClient = new QueryClient()

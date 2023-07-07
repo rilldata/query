@@ -3,7 +3,7 @@
     useQueryClient,
     createQuery,
     createMutation,
-  } from '@tanstack/svelte-query'
+  } from '@rilldata/svelte-query'
 
   let intervalMs = 1000
   let value: string

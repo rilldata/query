@@ -35,7 +35,7 @@
     "@tanstack/react-query-devtools",
     "@tanstack/react-query-persist-client",
     "@tanstack/solid-query",
-    "@tanstack/svelte-query",
+    "@rilldata/svelte-query",
     "@tanstack/vue-query"
   ]
 }

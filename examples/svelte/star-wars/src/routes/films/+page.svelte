@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { createQuery } from '@tanstack/svelte-query'
+  import { createQuery } from '@rilldata/svelte-query'
 
   const getFilms = async () => {
     const res = await fetch('https://swapi.dev/api/films/')

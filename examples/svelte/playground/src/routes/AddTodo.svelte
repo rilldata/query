@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { createMutation, useQueryClient } from '@tanstack/svelte-query'
+  import { createMutation, useQueryClient } from '@rilldata/svelte-query'
   import {
     errorRate,
     queryTimeMin,

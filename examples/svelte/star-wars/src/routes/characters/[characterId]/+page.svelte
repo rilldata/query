@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { createQuery } from '@tanstack/svelte-query'
+  import { createQuery } from '@rilldata/svelte-query'
   import Homeworld from './Homeworld.svelte'
   import Film from './Film.svelte'
   import type { PageData } from './$types'
