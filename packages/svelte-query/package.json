@@ -55,6 +55,6 @@
     "@tanstack/query-core": "4.29.19"
   },
   "peerDependencies": {
-    "svelte": "^3.54.0"
+    "svelte": ">=3 <5"
   }
 }
